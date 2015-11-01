@@ -3,11 +3,11 @@ import { columns } from './constants';
 import { getPercentage } from './functions';
 
 /**
- * Generates all the column sizes variations based on the already defined
+ * Generates all the offset column sizes variations based on the already defined
  * breakpoints for the responsive mobile first behaviour
  * @param {Object} bps - Breakpoints object with the media queries declarations
- * @param {number} count - Quantity of columns to be generated
- * @returns {Object} -Responsive column system properties
+ * @param {number} count - Quantity of offset columns to be generated
+ * @returns {Object} -Responsive offset column system properties
  */
 function responsiveOffsets(bps, count) {
   const properties = {};
