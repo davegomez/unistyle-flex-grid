@@ -1,0 +1,33 @@
+{
+  "name": "unistyle-flex-grid",
+  "version": "0.1.0",
+  "description": "Simple Flexbox grid layout build with Unistyle",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/davegomez/unistyle-flex-grid.git"
+  },
+  "keywords": [
+    "flexbox",
+    "grid",
+    "css",
+    "unistyle",
+    "ECMAScript"
+  ],
+  "author": {
+    "name": "David Gómez",
+    "email": "dg.dave@gmail.com",
+    "url": "https://github.com/davegomez"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davegomez/unistyle-flex-grid/issues"
+  },
+  "homepage": "https://github.com/davegomez/unistyle-flex-grid#readme",
+  "devDependencies": {
+    "unistyle": "^0.3.0"
+  }
+}
