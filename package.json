@@ -35,6 +35,7 @@
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel-core": "^6.0.14",
+    "eslint": "^1.8.0",
     "minifier": "^0.7.1",
     "postcss-cli": "^2.3.2",
     "unistyle": "^0.3.0"
