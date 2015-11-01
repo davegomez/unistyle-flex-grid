@@ -1,12 +1,18 @@
 import breakpoints from './breakpoints';
 import { colFlex } from './constants';
 
-function flexColumn() {
+/**
+ * Generate a set of grid column classes using a namespace represented by the
+ * breakpoints' names, and adding the column flex properties
+ * @param {Object} bps - Breakpoints object with the media queries declarations
+ * @returns {Object} - Column properties object
+ */
+function flexColumn(bps) {
   const properties = {};
 
-  Object.keys(breakpoints)
-    .forEach(breakpoint => {
-      properties[`.col-${breakpoint}`] = {
+  Object.keys(bps)
+    .forEach(bp => {
+      properties[`.col-${bp}`] = {
         ...colFlex
       };
     });
@@ -15,4 +21,4 @@ function flexColumn() {
 }
 
 
-export default flexColumn();
+export default flexColumn(breakpoints);

@@ -6,7 +6,7 @@ import { getPercentage } from './functions';
  * Generates all the column sizes variations based on the already defined
  * breakpoints for the responsive mobile first behaviour
  * @param {Object} bps - Breakpoints object with the media queries declarations
- * @param {number} count - Quantity of columns to be generated
+ * @param {number} count - Quantity of column properties to be generated
  * @returns {Object} -Responsive column system properties
  */
 function responsiveColumns(bps, count) {

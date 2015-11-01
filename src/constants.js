@@ -1,3 +1,8 @@
+/**
+ * Constant values to be use along the grid sistem including property blocks to
+ * extend another ones
+ */
+
 import { spacing } from './functions';
 
 export const columns = 12;
