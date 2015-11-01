@@ -2,20 +2,27 @@ import breakpoints from './breakpoints';
 import { columns } from './constants';
 import { getPercentage } from './functions';
 
-function responsiveOffsets() {
+/**
+ * Generates all the column sizes variations based on the already defined
+ * breakpoints for the responsive mobile first behaviour
+ * @param {Object} bps - Breakpoints object with the media queries declarations
+ * @param {number} count - Quantity of columns to be generated
+ * @returns {Object} -Responsive column system properties
+ */
+function responsiveOffsets(bps, count) {
   const properties = {};
 
-  Object.keys(breakpoints)
-    .forEach(breakpoint => {
-      for (let index = 1; index <= columns; index += 1) {
-        if (breakpoints[breakpoint]) {
-          properties[`.off-${breakpoint}-${index}`] = {
-            [breakpoints[breakpoint]]: {
+  Object.keys(bps)
+    .forEach(bp => {
+      for (let index = 1; index <= count; index += 1) {
+        if (bps[bp]) {
+          properties[`.off-${bp}-${index}`] = {
+            [bps[bp]]: {
               marginLeft: getPercentage(index)
             }
           };
         } else {
-          properties[`.off-${breakpoint}-${index}`] = {
+          properties[`.off-${bp}-${index}`] = {
             marginLeft: getPercentage(index)
           };
         }
@@ -25,4 +32,4 @@ function responsiveOffsets() {
   return properties;
 }
 
-export default responsiveOffsets();
+export default responsiveOffsets(breakpoints, columns);
