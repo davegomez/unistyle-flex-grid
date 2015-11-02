@@ -1,7 +1,7 @@
 {
   "name": "unistyle-flex-grid",
   "version": "0.1.0",
-  "description": "Simple Flexbox grid layout system builded with Unistyle",
+  "description": "Simple Flexbox grid layout system built with Unistyle",
   "main": "dist/src/index.js",
   "scripts": {
     "compile": "unistyle -o dist/ufg.css src/index.js",
@@ -21,7 +21,10 @@
     "grid",
     "css",
     "unistyle",
-    "ecmascript"
+    "ecmascript",
+    "ecmascript2015",
+    "es6",
+    "es2015"
   ],
   "author": {
     "name": "David Gómez",
