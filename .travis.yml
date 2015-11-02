@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "5.0.0"
+  - "4.2.1"
+  - "iojs"
+script:
+  - npm run-script test
+  - npm run-script build
+  - npm run-script prepublish
+notifications:
+  email:
+    - dg.dave@gmail.com
