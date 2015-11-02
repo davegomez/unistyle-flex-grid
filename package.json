@@ -4,11 +4,12 @@
   "description": "Simple Flexbox grid layout system builded with Unistyle",
   "main": "dist/src/index.js",
   "scripts": {
-    "build": "npm run-script compile && npm run-script prefix && npm run-script minify",
     "compile": "unistyle -o dist/ufg.css src/index.js",
+    "distribute": "npm run-script compile && npm run-script prefix && npm run-script minify",
     "minify": "minify dist/ufg.css",
     "prefix": "postcss --use autoprefixer dist/ufg.css -d dist/",
-    "prepublish": "babel src --out-dir dist",
+    "prepublish": "babel src --out-dir dist/src",
+    "build": "npm run-script prepublish && npm run-script distribute",
     "test": "eslint src/"
   },
   "repository": {
@@ -34,10 +35,16 @@
   "homepage": "https://github.com/davegomez/unistyle-flex-grid#readme",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
-    "babel-core": "^6.0.14",
+    "babel-core": "^6.0.15",
+    "babel-preset-stage-2": "^6.0.15",
     "eslint": "^1.8.0",
     "minifier": "^0.7.1",
     "postcss-cli": "^2.3.2",
     "unistyle": "^0.3.0"
+  },
+  "babel": {
+    "presets": [
+      "stage-2"
+    ]
   }
 }
