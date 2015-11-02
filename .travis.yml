@@ -3,10 +3,12 @@ node_js:
   - "5.0.0"
   - "4.2.1"
   - "iojs"
+before_script:
+  - npm install -g babel babel-cli babel-preset-stage-2 eslint babel-eslint unistyle
 script:
+  - npm install
   - npm run-script test
   - npm run-script build
-  - npm run-script prepublish
 notifications:
   email:
     - dg.dave@gmail.com
