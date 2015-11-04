@@ -1,6 +1,6 @@
 {
   "name": "unistyle-flex-grid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple Flexbox grid layout system built with Unistyle",
   "main": "dist/src/index.js",
   "scripts": {
