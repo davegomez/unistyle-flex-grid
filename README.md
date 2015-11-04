@@ -35,6 +35,14 @@ export default = [
 
 *Coming soon...*
 
+##### Standalone
+
+You can use the compiled, prefixed, and minified version of unistyle-flex-grid as a standalone CSS downloading the files found in the [dist](https://github.com/davegomez/unistyle-flex-grid/tree/master/dist) directory of this repository and adding it to your project using the `<link>` HTML tag.
+
+```
+<link rel="stylesheet" href=".../ufg.min.css">
+```
+
 ### Options:
 
 - `columns`: The number of columns you want your grid to be, defaults to 12
