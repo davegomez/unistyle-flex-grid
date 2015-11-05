@@ -1,13 +1,12 @@
-import { columns } from './constants';
-
 /**
  * Use the corresponding column position to calculate its width size in
  * percentages according to the amount of columns needed by the user
- * @param {number} column - Current column position
- * @returns {string} - Column size in percentages
+ * @param {number} position - Current column position
+ * @param {number} total - Total number of columns
+ * @returns {string} - Column size in percentage
  */
-export function getPercentage(column) {
-  const value = column / columns * 100;
+export function getPercentage(position, total) {
+  const value = position / total * 100;
   return `${value.toFixed(5)}%`;
 }
 
