@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/davegomez/unistyle-flex-grid.svg?branch=develop)](https://travis-ci.org/davegomez/unistyle-flex-grid)
 [![npm version](https://badge.fury.io/js/unistyle-flex-grid.svg)](https://badge.fury.io/js/unistyle-flex-grid)
 
-Simple Flexbox grid layout system built with Unistyle
+Simple Flexbox grid layout system built with [Unistyle](https://github.com/joakimbeng/unistyle)
 
 **Note:** This is a work inspired on [scss-flex-grid](https://github.com/matthewsimo/scss-flex-grid) by [Matthew Simo](https://github.com/matthewsimo). You can check his [demo](http://matthewsimo.github.io/scss-flex-grid/) page to learn how to use the grid while I finish my demo version.
 
