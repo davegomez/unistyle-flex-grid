@@ -5,12 +5,13 @@
 
 Simple Flexbox grid layout system built with Unistyle
 
-**Note:** This is a work based on [scss-flex-grid](https://github.com/matthewsimo/scss-flex-grid) by [Matthew Simo](https://github.com/matthewsimo). You can check his [demo](http://matthewsimo.github.io/scss-flex-grid/) page to learn how to use the grid while I finish my demo version.
+**Note:** This is a work inspired on [scss-flex-grid](https://github.com/matthewsimo/scss-flex-grid) by [Matthew Simo](https://github.com/matthewsimo). You can check his [demo](http://matthewsimo.github.io/scss-flex-grid/) page to learn how to use the grid while I finish my demo version.
 
 ### Features:
 
 - Responsive, mobile first approach
-- Define specific colum size or use a flex column (a column that grows to fill space)
+- Heavily tested
+- Define specific column size or use a flex column (a column that grows to fill space)
 - Define offset to push column a specific number of columns.
 - Set your own number of columns!
 
@@ -37,7 +38,7 @@ export default = [
 
 ##### Standalone
 
-You can use the compiled, prefixed, and minified version of unistyle-flex-grid as a standalone CSS downloading the files found in the [dist](https://github.com/davegomez/unistyle-flex-grid/tree/master/dist) directory of this repository and adding it to your project using the `<link>` HTML tag.
+You can use the compiled, prefixed, and minified version of unistyle-flex-grid as a standalone CSS downloading the files found in the [dist](https://github.com/davegomez/unistyle-flex-grid/tree/master/dist) directory and adding it to your project using the `<link>` HTML tag.
 
 ```
 <link rel="stylesheet" href=".../ufg.min.css">
