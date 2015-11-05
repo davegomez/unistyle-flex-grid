@@ -3,11 +3,11 @@ const babel = require('babel');
 module.exports = function (wallaby) {
   return {
     files: [
-      { pattern: 'src/*.js', load: false }
+      { pattern: 'src/**/*.js', load: false }
     ],
 
     tests: [
-      { pattern: 'test/*.spec.js', load: false }
+      { pattern: 'test/**/*.spec.js', load: false }
     ],
 
     testFramework: 'mocha',
