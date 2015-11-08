@@ -10,7 +10,7 @@
     "prefix": "postcss --use autoprefixer dist/ufg.css -d dist/",
     "prepublish": "babel src --out-dir dist/src",
     "build": "npm run-script prepublish && npm run-script distribute",
-    "test": "eslint src/ && mocha test/ --compilers js:babel-core/register"
+    "test": "eslint src/ && mocha test/ --ui tdd --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
