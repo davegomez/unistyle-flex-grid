@@ -1,6 +1,6 @@
 const babel = require('babel');
 
-module.exports = function (wallaby) {
+module.exports = wallaby => {
   return {
     files: [
       'src/**/*.js'
@@ -22,6 +22,11 @@ module.exports = function (wallaby) {
         babel,
         stage: 0
       })
+    },
+
+    bootstrap: function (w) {
+      const mocha = w.testFramework;
+      mocha.ui('tdd');
     }
   };
 };
